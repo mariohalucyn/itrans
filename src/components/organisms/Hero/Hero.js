@@ -11,15 +11,18 @@ const HeroHeader = styled.div`
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
 `
 
 const HeroContent = styled.div`
   width: 1200px;
   margin: 0 auto;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
 
