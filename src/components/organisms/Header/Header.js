@@ -1,50 +1,43 @@
 import React from 'react'
-import {
-  NavButton,
-  StyledHeader,
-  StyledList,
-  StyledListItem,
-  StyledLogo,
-  StyledWrapper,
-} from './Header.styles'
+import { StyledHeader, StyledList, StyledWrapper } from './Header.styles'
 
 const Header = () => (
   <StyledWrapper>
     <StyledHeader>
-      <StyledLogo>
+      <h1>
         <a href="">ITrans</a>
-      </StyledLogo>
+      </h1>
       <StyledList>
-        <StyledListItem>
-          <NavButton>
+        <li>
+          <button>
             <a href="">Nasza Firma</a>
-          </NavButton>
-        </StyledListItem>
-        <StyledListItem>
-          <NavButton>
+          </button>
+        </li>
+        <li>
+          <button>
             <a href="">Transport</a>
-          </NavButton>
-        </StyledListItem>
-        <StyledListItem>
-          <NavButton>
+          </button>
+        </li>
+        <li>
+          <button>
             <a href="">Logistyka</a>
-          </NavButton>
-        </StyledListItem>
-        <StyledListItem>
-          <NavButton>
+          </button>
+        </li>
+        <li>
+          <button>
             <a href="">Wycena</a>
-          </NavButton>
-        </StyledListItem>
-        <StyledListItem>
-          <NavButton>
+          </button>
+        </li>
+        <li>
+          <button>
             <a href="">Praca</a>
-          </NavButton>
-        </StyledListItem>
-        <StyledListItem>
-          <NavButton>
+          </button>
+        </li>
+        <li>
+          <button>
             <a href="">Kontakt</a>
-          </NavButton>
-        </StyledListItem>
+          </button>
+        </li>
       </StyledList>
     </StyledHeader>
   </StyledWrapper>

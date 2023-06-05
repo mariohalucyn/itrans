@@ -10,7 +10,7 @@ import { ReactComponent as Next } from '../../../assets/icons/next.svg'
 const AboutSection = () => (
   <StyledWrapper>
     <StyledList>
-      <StyledListItem>
+      <li>
         <div>
           <a href="">
             <h1>Nasza firma</h1>
@@ -32,8 +32,8 @@ const AboutSection = () => (
             </a>
           </ReadMore>
         </div>
-      </StyledListItem>
-      <StyledListItem>
+      </li>
+      <li>
         <div>
           <a href="">
             <h1>Transport</h1>
@@ -55,8 +55,8 @@ const AboutSection = () => (
             </a>
           </ReadMore>
         </div>
-      </StyledListItem>
-      <StyledListItem>
+      </li>
+      <li>
         <div>
           <a href="">
             <h1>Logistyka</h1>
@@ -77,7 +77,7 @@ const AboutSection = () => (
             </a>
           </ReadMore>
         </div>
-      </StyledListItem>
+      </li>
     </StyledList>
   </StyledWrapper>
 )

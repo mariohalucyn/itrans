@@ -20,6 +20,7 @@ export const StyledList = styled.ul`
   flex-direction: column;
   margin: 0;
   padding: 24px 0;
+
   @media (min-width: 768px) {
     justify-content: space-between;
     flex-direction: row;
@@ -48,6 +49,12 @@ export const StyledContactList = styled.ul`
     align-items: center;
     gap: 24px;
   }
+
+  li {
+    display: flex;
+    gap: 8px;
+    padding: 8px 0;
+  }
 `
 
 export const StyledLabel = styled.label`
@@ -58,31 +65,31 @@ export const StyledLabel = styled.label`
     align-items: center;
     gap: 24px;
   }
-`
 
-export const StyledInput = styled.input`
-  height: 48px;
-  width: 200px;
-  font-size: 1rem;
-  padding: 24px;
-  border: 3px solid ${({ theme }) => theme.colors.gray};
+  input {
+    height: 48px;
+    width: 200px;
+    font-size: 1rem;
+    padding: 24px;
+    border: 3px solid ${({ theme }) => theme.colors.gray};
 
-  &::placeholder {
+    &::placeholder {
+      font-weight: 600;
+      color: ${({ theme }) => theme.colors.darkGray};
+    }
+  }
+
+  button {
+    width: 90px;
+    height: 48px;
     font-weight: 600;
-    color: ${({ theme }) => theme.colors.darkGray};
+    font-size: 1rem;
+    background-color: ${({ theme }) => theme.colors.white};
+    border: 4px solid ${({ theme }) => theme.colors.main};
   }
 `
 
-export const StyledInputButton = styled.button`
-  width: 90px;
-  height: 48px;
-  font-weight: 600;
-  font-size: 1rem;
-  background-color: ${({ theme }) => theme.colors.white};
-  border: 4px solid ${({ theme }) => theme.colors.main};
-`
-
-export const StyledHours = styled.p`
+export const StyledHours = styled.div`
   font-size: 14px;
   position: relative;
   padding: 0 0 24px 0;
@@ -100,10 +107,4 @@ export const StyledHours = styled.p`
   @media (min-width: 1024px) {
     padding: 24px 0;
   }
-`
-
-export const StyledListItem = styled.li`
-  display: flex;
-  gap: 8px;
-  padding: 8px 0;
 `

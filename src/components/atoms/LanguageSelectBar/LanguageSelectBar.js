@@ -1,22 +1,18 @@
 import React from 'react'
-import {
-  LanguageButton,
-  StyledLanguageMenu,
-  StyledWrapper,
-} from './LanguageSelectBar.styles'
+import { StyledLanguageMenu, StyledWrapper } from './LanguageSelectBar.styles'
 
 const LanguageSelectBar = () => (
   <StyledWrapper>
     <StyledLanguageMenu>
-      <LanguageButton>
+      <button>
         <a href="">en</a>
-      </LanguageButton>
-      <LanguageButton>
+      </button>
+      <button>
         <a href="">pl</a>
-      </LanguageButton>
-      <LanguageButton>
+      </button>
+      <button>
         <a href="">fr</a>
-      </LanguageButton>
+      </button>
     </StyledLanguageMenu>
   </StyledWrapper>
 )

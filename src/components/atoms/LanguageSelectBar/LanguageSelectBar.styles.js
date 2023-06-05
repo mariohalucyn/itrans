@@ -22,14 +22,13 @@ export const StyledLanguageMenu = styled.div`
     width: 1200px;
     margin: 0 auto;
   }
-`
 
-export const LanguageButton = styled.button`
-  background: none;
-  padding: 8px;
-  border: 1px solid ${({ theme }) => theme.colors.lightGray};
-
-  a {
-    text-decoration: none;
+  button {
+    background: none;
+    padding: 8px;
+    border: 1px solid ${({ theme }) => theme.colors.lightGray};
+    a {
+      text-decoration: none;
+    }
   }
 `

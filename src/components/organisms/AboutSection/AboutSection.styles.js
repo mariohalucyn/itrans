@@ -16,6 +16,7 @@ export const StyledList = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  gap: 52px;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
@@ -26,17 +27,15 @@ export const StyledList = styled.ul`
     padding: 0;
   }
 
-  gap: 52px;
-`
+  li {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    margin: 0;
+    padding: 0;
 
-export const StyledListItem = styled.li`
-  display: grid;
-  grid-template-rows: 2fr 1fr;
-  margin: 0;
-  padding: 0;
-
-  a {
-    text-decoration: none;
+    a {
+      text-decoration: none;
+    }
   }
 `
 

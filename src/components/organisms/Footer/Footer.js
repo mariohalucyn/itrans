@@ -6,11 +6,8 @@ import {
   StyledContactList,
   StyledFooter,
   StyledHours,
-  StyledInput,
-  StyledInputButton,
   StyledLabel,
   StyledList,
-  StyledListItem,
   StyledWrapper,
 } from './Footer.styles'
 
@@ -29,24 +26,24 @@ const Footer = () => (
       <div>
         <StyledContact>
           <StyledContactList>
-            <StyledListItem>
+            <li>
               <Mail />
               info@itrans.com.pl
-            </StyledListItem>
-            <StyledListItem>
+            </li>
+            <li>
               <Phone />
               +48 506 874 737
-            </StyledListItem>
-            <StyledListItem>
+            </li>
+            <li>
               <Phone />
               +48 516 135 760
-            </StyledListItem>
+            </li>
           </StyledContactList>
           <div>
             <StyledLabel>
               Kontakt
-              <StyledInput placeholder="Wpisz adres email" type="text" />
-              <StyledInputButton>Zapisz</StyledInputButton>
+              <input placeholder="Wpisz adres email" type="text" />
+              <button>Zapisz</button>
             </StyledLabel>
           </div>
         </StyledContact>

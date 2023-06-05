@@ -23,6 +23,25 @@ export const StyledHeader = styled.div`
     display: flex;
     margin: 0 auto;
   }
+  h1 {
+    font-size: 56px;
+    position: relative;
+
+    &::after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      width: 90px;
+      height: 40px;
+      left: 0;
+      top: 0;
+      background-color: ${({ theme }) => theme.colors.main};
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
 `
 
 export const StyledList = styled.ul`
@@ -31,68 +50,48 @@ export const StyledList = styled.ul`
   padding: 0;
   display: flex;
   gap: 16px;
-`
 
-export const StyledListItem = styled.li``
+  li {
+    button {
+      position: relative;
+      height: 30px;
+      padding: 0 18px;
+      font-size: 18px;
+      border: none;
+      background: none;
 
-export const StyledLogo = styled.h1`
-  font-size: 56px;
-  position: relative;
+      @-webkit-keyframes fill {
+        0% {
+          width: 0;
+          height: 6px;
+        }
+        100% {
+          width: 100%;
+          height: 6px;
+          background-color: ${({ theme }) => theme.colors.main};
+        }
+      }
 
-  &::after {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    width: 90px;
-    height: 40px;
-    left: 0;
-    top: 0;
-    background-color: ${({ theme }) => theme.colors.main};
-  }
+      &::after {
+        content: '';
+        z-index: -1;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+      }
 
-  a {
-    text-decoration: none;
-  }
-`
+      &:hover::after {
+        animation: fill 0.4s forwards;
+        -webkit-animation: fill 0.4s forwards;
+        -moz-animation: fill 0.4s forwards;
+        opacity: 1;
+      }
 
-export const NavButton = styled.button`
-  position: relative;
-  height: 30px;
-  padding: 0 18px;
-  font-size: 18px;
-  border: none;
-  background: none;
-
-  @-webkit-keyframes fill {
-    0% {
-      width: 0;
-      height: 6px;
+      a {
+        text-decoration: none;
+      }
     }
-    100% {
-      width: 100%;
-      height: 6px;
-      background-color: ${({ theme }) => theme.colors.main};
-    }
-  }
-
-  &::after {
-    content: '';
-    z-index: -1;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-  }
-
-  &:hover::after {
-    animation: fill 0.4s forwards;
-    -webkit-animation: fill 0.4s forwards;
-    -moz-animation: fill 0.4s forwards;
-    opacity: 1;
-  }
-
-  a {
-    text-decoration: none;
   }
 `
