@@ -2,11 +2,22 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledWrapper = styled.div`
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: ${({ theme }) => theme.colors.main};
+  }
 `
 
 const StyledHeader = styled.div`
+  width: 1200px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -24,7 +35,7 @@ const StyledList = styled.ul`
 const StyledListItem = styled.li``
 
 const StyledLogo = styled.h1`
-  font-size: 64px;
+  font-size: 48px;
 `
 
 const NavButton = styled.button`
