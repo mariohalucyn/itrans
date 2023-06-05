@@ -5,50 +5,60 @@ export const StyledWrapper = styled.div`
 `
 
 export const StyledFooter = styled.div`
-  width: 1200px;
-  margin: 0 auto;
-  padding: 36px 0;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+  }
 `
 
 export const StyledList = styled.ul`
   list-style-type: none;
-  display: flex;
   margin: 0;
   padding: 24px 0;
-  justify-content: space-between;
 `
 export const StyledContact = styled.div`
-  gap: 24px;
   display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @media (min-width: 1024px) {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 24px;
+  }
 `
 
 export const StyledContactList = styled.ul`
   list-style-type: none;
-  display: flex;
-  gap: 24px;
-  align-items: center;
-
   margin: 0;
   padding: 0;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
 `
 
 export const StyledLabel = styled.label`
-  display: flex;
-  gap: 12px;
-  align-items: center;
+  display: none;
+
+  @media (min-width: 425px) {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
 `
 
 export const StyledInput = styled.input`
   height: 48px;
   width: 200px;
   font-size: 1rem;
-  padding: 12px;
+  padding: 16px;
   border: 3px solid ${({ theme }) => theme.colors.gray};
 
   &::placeholder {
@@ -70,6 +80,7 @@ export const StyledHours = styled.p`
   font-size: 14px;
   position: relative;
   padding: 24px 0;
+  margin: 0;
 
   &::after {
     content: '';
@@ -85,4 +96,5 @@ export const StyledHours = styled.p`
 export const StyledListItem = styled.li`
   display: flex;
   gap: 8px;
+  padding: 8px 0;
 `
