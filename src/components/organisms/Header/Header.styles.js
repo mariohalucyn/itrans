@@ -34,14 +34,13 @@ export const StyledList = styled.ul`
 export const StyledListItem = styled.li``
 
 export const StyledLogo = styled.h1`
-  font-size: 48px;
+  font-size: 56px;
 `
 
 export const NavButton = styled.button`
   position: relative;
-  width: 112px;
   height: 30px;
-  padding: 0;
+  padding: 0 18px;
   font-size: 18px;
   border: none;
   background: none;
@@ -69,9 +68,13 @@ export const NavButton = styled.button`
   }
 
   &:hover::after {
-    animation: fill 0.5s forwards;
-    -webkit-animation: fill 0.5s forwards;
-    -moz-animation: fill 0.5s forwards;
+    animation: fill 0.4s forwards;
+    -webkit-animation: fill 0.4s forwards;
+    -moz-animation: fill 0.4s forwards;
     opacity: 1;
+  }
+
+  a {
+    text-decoration: none;
   }
 `

@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { ReactComponent as Phone } from '../../../assets/icons/phone.svg'
+import { ReactComponent as Mail } from '../../../assets/icons/mail.svg'
 
 const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.lightGray};
@@ -24,18 +26,8 @@ const StyledContact = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 24px 0;
+  padding: 0;
   position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: ${({ theme }) => theme.colors.gray};
-  }
 `
 
 const StyledContactList = styled.ul`
@@ -56,9 +48,15 @@ const StyledLabel = styled.label`
 
 const StyledInput = styled.input`
   height: 48px;
+  width: 200px;
   font-size: 1rem;
   padding: 12px;
   border: 3px solid ${({ theme }) => theme.colors.gray};
+
+  &::placeholder {
+    font-weight: 600;
+    color: ${({ theme }) => theme.colors.darkGray};
+  }
 `
 
 const StyledInputButton = styled.button`
@@ -68,6 +66,27 @@ const StyledInputButton = styled.button`
   font-size: 1rem;
   background-color: ${({ theme }) => theme.colors.white};
   border: 4px solid ${({ theme }) => theme.colors.main};
+`
+
+const StyledHours = styled.p`
+  font-size: 14px;
+  position: relative;
+  padding: 24px 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: ${({ theme }) => theme.colors.gray};
+  }
+`
+
+const StyledListItem = styled.li`
+  display: flex;
+  gap: 8px;
 `
 
 const Footer = () => (
@@ -85,8 +104,18 @@ const Footer = () => (
       <div>
         <StyledContact>
           <StyledContactList>
-            <li>info@itrans.com.pl</li>
-            <li>+48 506-874-737</li>
+            <StyledListItem>
+              <Mail />
+              info@itrans.com.pl
+            </StyledListItem>
+            <StyledListItem>
+              <Phone />
+              +48 506 874 737
+            </StyledListItem>
+            <StyledListItem>
+              <Phone />
+              +48 516 135 760
+            </StyledListItem>
           </StyledContactList>
           <div>
             <StyledLabel>
@@ -98,13 +127,18 @@ const Footer = () => (
         </StyledContact>
       </div>
       <div>
+        <StyledHours>
+          pon. - pt. 7:00 AM - 10:00 PM
+          <br />
+          sob. 8:00 AM - 8:00 PM, niedziele 8:00 AM - 6:00 PM
+        </StyledHours>
+      </div>
+      <div>
         <StyledList>
           <li>
             <a href="">Polityka Prywatności</a>
           </li>
-          <li>
-            Copyright © 2023 Itrans sp. z o.o. Wszelkie prawa zastrzeżone.
-          </li>
+          <li>Copyright © 2023 Itrans Sp. Jawna Wszelkie prawa zastrzeżone.</li>
         </StyledList>
       </div>
     </StyledFooter>

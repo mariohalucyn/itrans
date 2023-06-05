@@ -14,22 +14,34 @@ const Header = () => (
       <StyledLogo>ITrans</StyledLogo>
       <StyledList>
         <StyledListItem>
-          <NavButton>Nasza Firma</NavButton>
+          <NavButton>
+            <a href="">Nasza Firma</a>
+          </NavButton>
         </StyledListItem>
         <StyledListItem>
-          <NavButton>Transport</NavButton>
+          <NavButton>
+            <a href="">Transport</a>
+          </NavButton>
         </StyledListItem>
         <StyledListItem>
-          <NavButton>Logistyka</NavButton>
+          <NavButton>
+            <a href="">Logistyka</a>
+          </NavButton>
         </StyledListItem>
         <StyledListItem>
-          <NavButton>Wycena</NavButton>
+          <NavButton>
+            <a href="">Wycena</a>
+          </NavButton>
         </StyledListItem>
         <StyledListItem>
-          <NavButton>Praca</NavButton>
+          <NavButton>
+            <a href="">Praca</a>
+          </NavButton>
         </StyledListItem>
         <StyledListItem>
-          <NavButton>Kontakt</NavButton>
+          <NavButton>
+            <a href="">Kontakt</a>
+          </NavButton>
         </StyledListItem>
       </StyledList>
     </StyledHeader>

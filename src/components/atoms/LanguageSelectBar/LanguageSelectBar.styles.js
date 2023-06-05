@@ -26,4 +26,8 @@ export const LanguageButton = styled.button`
   background: none;
   padding: 8px;
   border: 1px solid ${({ theme }) => theme.colors.lightGray};
+
+  a {
+    text-decoration: none;
+  }
 `

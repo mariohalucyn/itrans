@@ -8,9 +8,15 @@ import {
 const LanguageSelectBar = () => (
   <StyledWrapper>
     <StyledLanguageMenu>
-      <LanguageButton>en</LanguageButton>
-      <LanguageButton>pl</LanguageButton>
-      <LanguageButton>fr</LanguageButton>
+      <LanguageButton>
+        <a href="">en</a>
+      </LanguageButton>
+      <LanguageButton>
+        <a href="">pl</a>
+      </LanguageButton>
+      <LanguageButton>
+        <a href="">fr</a>
+      </LanguageButton>
     </StyledLanguageMenu>
   </StyledWrapper>
 )
