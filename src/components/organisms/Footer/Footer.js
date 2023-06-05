@@ -44,7 +44,7 @@ const Footer = () => (
           </StyledContactList>
           <div>
             <StyledLabel>
-              Newsletter
+              Kontakt
               <StyledInput placeholder="Wpisz adres email" type="text" />
               <StyledInputButton>Zapisz</StyledInputButton>
             </StyledLabel>

@@ -1,22 +1,53 @@
 import styled from 'styled-components'
 
 export const StyledWrapper = styled.div`
-  width: 1200px;
-  margin: 0 auto;
-  padding: 64px 0;
+  padding: 48px 0;
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+  }
 `
 
 export const StyledList = styled.ul`
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  gap: 24px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
+
+  gap: 52px;
 `
 
 export const StyledListItem = styled.li`
+  display: grid;
+  grid-template-rows: 2fr 1fr;
   margin: 0;
   padding: 0;
+
+  a {
+    text-decoration: none;
+  }
+`
+
+export const ReadMore = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
 `

@@ -5,29 +5,28 @@ export const StyledWrapper = styled.div``
 
 export const HeroHeader = styled.div`
   background-image: url('${Transport}');
-  width: 100%;
   height: 500px;
   background-size: cover;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0;
-  padding: 0;
+  display: flex;
 `
 
 export const HeroContent = styled.div`
-  width: 1200px;
-  margin: 0 auto;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   font-size: 1.6rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
 
+  @media (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   h1 {
-    background-color: ${({ theme }) => theme.colors.black};
-    padding: 24px 24px 12px 72px;
+    background-color: ${({ theme }) => theme.colors.darker};
+    padding: 36px 24px 24px 92px;
     margin: 0;
   }
 
