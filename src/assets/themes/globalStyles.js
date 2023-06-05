@@ -13,6 +13,9 @@ export const GlobalStyle = createGlobalStyle`
   
   body {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1rem;
     color: #3c3c3c;
   }
   

@@ -1,7 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 
-const StyledWrapper = styled.div`
+export const StyledWrapper = styled.div`
   width: 100%;
   position: relative;
 
@@ -15,7 +14,7 @@ const StyledWrapper = styled.div`
   }
 `
 
-const StyledLanguageMenu = styled.div`
+export const StyledLanguageMenu = styled.div`
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -23,20 +22,8 @@ const StyledLanguageMenu = styled.div`
   justify-content: end;
 `
 
-const LanguageButton = styled.button`
+export const LanguageButton = styled.button`
   background: none;
   padding: 8px;
   border: 1px solid ${({ theme }) => theme.colors.lightGray};
 `
-
-const LanguageSelectBar = () => (
-  <StyledWrapper>
-    <StyledLanguageMenu>
-      <LanguageButton>en</LanguageButton>
-      <LanguageButton>pl</LanguageButton>
-      <LanguageButton>fr</LanguageButton>
-    </StyledLanguageMenu>
-  </StyledWrapper>
-)
-
-export default LanguageSelectBar
