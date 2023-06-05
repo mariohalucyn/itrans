@@ -7,40 +7,16 @@ const StyledWrapper = styled.div`
 `
 
 const StyledHeader = styled.div`
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: ${({ theme }) => theme.colors.lightGray};
-  }
-`
-
-const LanguageSelectBar = styled.div`
-  display: flex;
-  justify-content: end;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: ${({ theme }) => theme.colors.lightGray};
-  }
 `
 
 const StyledList = styled.ul`
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   gap: 16px;
 `
@@ -48,17 +24,17 @@ const StyledList = styled.ul`
 const StyledListItem = styled.li``
 
 const StyledLogo = styled.h1`
-  font-size: 82px;
+  font-size: 64px;
 `
 
 const NavButton = styled.button`
-  width: 120px;
-  height: 30px;
   position: relative;
-  background: none;
-  border: none;
-  font-size: 18px;
+  width: 108px;
+  height: 30px;
   padding: 0;
+  font-size: 18px;
+  border: none;
+  background: none;
 
   @-webkit-keyframes fill {
     0% {
@@ -75,11 +51,11 @@ const NavButton = styled.button`
   &::after {
     content: '';
     z-index: -1;
-    position: absolute;
-    opacity: 0;
     width: 100%;
+    position: absolute;
     left: 0;
     bottom: 0;
+    opacity: 0;
   }
 
   &:hover::after {
@@ -92,16 +68,11 @@ const NavButton = styled.button`
 
 const Header = () => (
   <StyledWrapper>
-    <LanguageSelectBar>
-      <button>en</button>
-      <button>pl</button>
-      <button>fr</button>
-    </LanguageSelectBar>
     <StyledHeader>
       <StyledLogo>ITrans</StyledLogo>
       <StyledList>
         <StyledListItem>
-          <NavButton>Nasza firma</NavButton>
+          <NavButton>Nasza Firma</NavButton>
         </StyledListItem>
         <StyledListItem>
           <NavButton>Transport</NavButton>
