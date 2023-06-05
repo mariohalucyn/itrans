@@ -1,26 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const StyledWrapper = styled.div`
-  width: 1200px;
-  margin: 0 auto;
-  padding: 64px 0;
-`
-
-const StyledList = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  gap: 24px;
-`
-
-const StyledListItem = styled.li`
-  margin: 0;
-  padding: 0;
-`
+import {
+  StyledList,
+  StyledListItem,
+  StyledWrapper,
+} from './AboutSection.styles'
 
 const AboutSection = () => (
   <StyledWrapper>

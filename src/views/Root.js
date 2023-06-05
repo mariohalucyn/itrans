@@ -6,7 +6,7 @@ import Footer from '../components/organisms/Footer/Footer'
 import Header from '../components/organisms/Header/Header'
 import LanguageSelectBar from '../components/atoms/LanguageSelectBar/LanguageSelectBar'
 import Hero from '../components/organisms/Hero/Hero'
-import AboutSection from '../components/AboutSection/AboutSection'
+import AboutSection from '../components/organisms/AboutSection/AboutSection'
 
 const StyledWrapper = styled.div``
 
