@@ -11,7 +11,9 @@ import {
 const Header = () => (
   <StyledWrapper>
     <StyledHeader>
-      <StyledLogo>ITrans</StyledLogo>
+      <StyledLogo>
+        <a href="">ITrans</a>
+      </StyledLogo>
       <StyledList>
         <StyledListItem>
           <NavButton>

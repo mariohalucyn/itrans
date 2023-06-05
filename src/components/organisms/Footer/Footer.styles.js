@@ -17,9 +17,13 @@ export const StyledFooter = styled.div`
 export const StyledList = styled.ul`
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin: 0;
   padding: 24px 0;
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 `
 export const StyledContact = styled.div`
   display: flex;

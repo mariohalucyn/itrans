@@ -26,8 +26,11 @@ export const HeroContent = styled.div`
 
   h1 {
     background-color: ${({ theme }) => theme.colors.darker};
-    padding: 36px 24px 24px 92px;
     margin: 0;
+    padding: 24px;
+    @media (min-width: 768px) {
+      padding: 36px 24px 24px 92px;
+    }
   }
 
   a {

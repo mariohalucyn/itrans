@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const StyledWrapper = styled.div`
-  width: 100%;
   position: relative;
 
   &::after {
@@ -15,12 +14,15 @@ export const StyledWrapper = styled.div`
 `
 
 export const StyledHeader = styled.div`
-  width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: none;
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+  }
 `
 
 export const StyledList = styled.ul`
@@ -46,6 +48,10 @@ export const StyledLogo = styled.h1`
     left: 0;
     top: 0;
     background-color: ${({ theme }) => theme.colors.main};
+  }
+
+  a {
+    text-decoration: none;
   }
 `
 

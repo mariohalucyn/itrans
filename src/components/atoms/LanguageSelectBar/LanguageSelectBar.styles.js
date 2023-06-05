@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const StyledWrapper = styled.div`
-  width: 100%;
   position: relative;
 
   &::after {
@@ -15,11 +14,14 @@ export const StyledWrapper = styled.div`
 `
 
 export const StyledLanguageMenu = styled.div`
-  width: 1200px;
-  margin: 0 auto;
   display: flex;
   position: relative;
   justify-content: end;
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+  }
 `
 
 export const LanguageButton = styled.button`
