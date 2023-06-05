@@ -35,6 +35,18 @@ export const StyledListItem = styled.li``
 
 export const StyledLogo = styled.h1`
   font-size: 56px;
+  position: relative;
+
+  &::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    background-color: ${({ theme }) => theme.colors.main};
+  }
 `
 
 export const NavButton = styled.button`
