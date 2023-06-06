@@ -17,7 +17,7 @@ const Footer = () => (
       <div>
         <StyledList>
           <div>
-            <li>Itrans Sp. Jawna</li>
+            <li>ITrans Sp. Jawna</li>
             <li>ul. Różana 25.</li>
             <li> 63-400 Ostrów Wielkopolski</li>
           </div>
@@ -60,7 +60,7 @@ const Footer = () => (
           <li>
             <a href="">Polityka Prywatności</a>
           </li>
-          <li>Copyright © 2023 Itrans Sp. Jawna Wszelkie prawa zastrzeżone.</li>
+          <li>Copyright © 2023 ITrans Sp. Jawna Wszelkie prawa zastrzeżone.</li>
         </StyledList>
       </div>
     </StyledFooter>
