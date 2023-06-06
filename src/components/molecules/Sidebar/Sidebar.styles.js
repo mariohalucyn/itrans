@@ -10,7 +10,7 @@ export const AppearAnimation = keyframes`
 `
 
 export const Navigation = styled.nav`
-  position: absolute;
+  position: marker;
   width: 100%;
   height: 100vh;
   left: 0;
@@ -22,6 +22,7 @@ export const Navigation = styled.nav`
     list-style-type: none;
     padding: 0;
     display: flex;
+    margin: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
