@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledWrapper = styled.div`
-  padding: 48px 0;
+  padding: 48px 24px;
 
   @media (min-width: 1200px) {
     width: 1200px;
@@ -12,7 +12,7 @@ export const StyledWrapper = styled.div`
 export const StyledList = styled.ul`
   list-style-type: none;
   margin: 0;
-  padding: 0 24px;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;

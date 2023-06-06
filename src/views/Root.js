@@ -5,7 +5,6 @@ import { theme } from '../assets/themes/theme'
 import Header from '../components/organisms/Header/Header'
 import Footer from '../components/organisms/Footer/Footer'
 import AboutSection from '../components/organisms/AboutSection/AboutSection'
-import Sidebar from '../components/molecules/Sidebar/Sidebar'
 import Hero from '../components/organisms/Hero/Hero'
 import LanguageSelectBar from '../components/atoms/LanguageSelectBar/LanguageSelectBar'
 
@@ -17,7 +16,6 @@ const Root = () => (
     <ThemeProvider theme={theme}>
       <LanguageSelectBar />
       <Header />
-      <Sidebar />
       <Hero />
       <AboutSection />
       <Footer />

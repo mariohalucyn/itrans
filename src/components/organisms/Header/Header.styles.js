@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 export const StyledWrapper = styled.div`
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 
   &::after {
     content: '';
@@ -16,16 +18,19 @@ export const StyledWrapper = styled.div`
 export const StyledHeader = styled.div`
   justify-content: space-between;
   align-items: center;
-  display: none;
+  display: flex;
+  padding: 24px;
 
-  @media (min-width: 1200px) {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-  }
   h1 {
     font-size: 56px;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: 1200px) {
+      left: 0;
+      transform: translateX(0);
+    }
 
     &::after {
       content: '';
@@ -48,8 +53,12 @@ export const StyledList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: none;
   gap: 16px;
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 
   li {
     button {

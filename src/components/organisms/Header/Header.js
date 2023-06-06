@@ -1,8 +1,10 @@
 import React from 'react'
 import { StyledHeader, StyledList, StyledWrapper } from './Header.styles'
+import Sidebar from '../../molecules/Sidebar/Sidebar'
 
 const Header = () => (
   <StyledWrapper>
+    <Sidebar />
     <StyledHeader>
       <h1>
         <a href="">ITrans</a>

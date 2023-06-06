@@ -10,7 +10,6 @@ export const StyledFooter = styled.div`
   @media (min-width: 1200px) {
     width: 1200px;
     margin: 0 auto;
-    padding: 24px 0;
   }
 `
 
