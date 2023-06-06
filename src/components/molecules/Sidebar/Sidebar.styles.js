@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 
-export const ApperarAnimation = keyframes`
+export const AppearAnimation = keyframes`
   from {
     opacity: 0;
   }
@@ -16,7 +16,7 @@ export const Navigation = styled.nav`
   left: 0;
   top: 0;
   background-color: ${({ theme }) => theme.colors.white};
-  animation: 0.3s 1 forwards ${ApperarAnimation};
+  animation: 0.3s 1 forwards ${AppearAnimation};
 
   ul {
     list-style-type: none;

@@ -6,7 +6,7 @@ import Header from '../components/organisms/Header/Header'
 import Footer from '../components/organisms/Footer/Footer'
 import AboutSection from '../components/organisms/AboutSection/AboutSection'
 import Hero from '../components/organisms/Hero/Hero'
-import LanguageSelectBar from '../components/atoms/LanguageSelectBar/LanguageSelectBar'
+import LanguageSelectBar from '../components/molecules/LanguageSelectBar/LanguageSelectBar'
 
 const StyledWrapper = styled.div``
 
@@ -14,7 +14,6 @@ const Root = () => (
   <StyledWrapper>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
-      <LanguageSelectBar />
       <Header />
       <Hero />
       <AboutSection />

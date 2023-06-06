@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const StyledWrapper = styled.div`
   position: relative;
-  padding: 0 24px;
 
   &::after {
     content: '';
