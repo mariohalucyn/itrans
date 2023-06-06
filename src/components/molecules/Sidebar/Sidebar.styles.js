@@ -10,9 +10,9 @@ export const AppearAnimation = keyframes`
 `
 
 export const Navigation = styled.nav`
+  position: absolute;
   width: 100%;
   height: 100vh;
-  position: absolute;
   left: 0;
   top: 0;
   background-color: ${({ theme }) => theme.colors.white};
