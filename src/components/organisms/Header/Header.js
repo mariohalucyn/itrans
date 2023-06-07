@@ -16,11 +16,6 @@ const Header = () => {
           <StyledList>
             <li>
               <button>
-                <a href="">Nasza Firma</a>
-              </button>
-            </li>
-            <li>
-              <button>
                 <a href="">Transport</a>
               </button>
             </li>

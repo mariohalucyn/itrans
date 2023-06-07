@@ -17,9 +17,6 @@ const Sidebar = () => {
         <Navigation>
           <ul>
             <li>
-              <a href="">Nasza firma</a>
-            </li>
-            <li>
               <a href="">Transport</a>
             </li>
             <li>

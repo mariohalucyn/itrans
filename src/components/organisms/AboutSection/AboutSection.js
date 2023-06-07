@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-  ReadMore,
-  StyledList,
-  StyledListItem,
-  StyledWrapper,
-} from './AboutSection.styles'
+import { ReadMore, StyledList, StyledWrapper } from './AboutSection.styles'
 import { ReactComponent as Next } from '../../../assets/icons/next.svg'
 
 const AboutSection = () => (

@@ -1,18 +1,22 @@
 import React from 'react'
 import { GlobalStyle } from '../assets/themes/globalStyles'
-import styled, { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
 import { theme } from '../assets/themes/theme'
-import Main from '../components/templates/Main/Main'
-
-const StyledWrapper = styled.div``
+import Header from '../components/organisms/Header/Header'
+import Hero from '../components/organisms/Hero/Hero'
+import Footer from '../components/organisms/Footer/Footer'
+import Transport from '../components/templates/Transport/Transport'
 
 const Root = () => (
-  <StyledWrapper>
+  <>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
-      <Main />
+      <Header />
+      <Hero />
+      <Transport />
+      <Footer />
     </ThemeProvider>
-  </StyledWrapper>
+  </>
 )
 
 export default Root
