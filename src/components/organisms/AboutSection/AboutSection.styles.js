@@ -43,10 +43,16 @@ export const ReadMore = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
+  opacity: 0.8;
+  transition: ease 0.2s;
 
   a {
     display: flex;
     align-items: center;
     text-decoration: none;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 `

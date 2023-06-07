@@ -92,9 +92,9 @@ export const StyledList = styled.ul`
       }
 
       &:hover::after {
-        animation: fill 0.4s forwards;
-        -webkit-animation: fill 0.4s forwards;
-        -moz-animation: fill 0.4s forwards;
+        animation: fill 0.3s forwards;
+        -webkit-animation: fill 0.3s forwards;
+        -moz-animation: fill 0.3s forwards;
         opacity: 1;
       }
 

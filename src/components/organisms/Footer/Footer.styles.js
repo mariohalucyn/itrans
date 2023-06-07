@@ -24,6 +24,12 @@ export const StyledList = styled.ul`
     justify-content: space-between;
     flex-direction: row;
   }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 `
 export const StyledContact = styled.div`
   display: flex;
@@ -70,11 +76,17 @@ export const StyledLabel = styled.label`
     width: 200px;
     font-size: 1rem;
     padding: 24px;
+    opacity: 0.7;
     border: 3px solid ${({ theme }) => theme.colors.gray};
+    transition: ease 0.2s;
 
     &::placeholder {
       font-weight: 600;
       color: ${({ theme }) => theme.colors.darkGray};
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 
