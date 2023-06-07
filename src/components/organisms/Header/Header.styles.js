@@ -19,10 +19,10 @@ export const StyledHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   display: flex;
-  padding: 24px;
+  padding: 0 24px;
 
   h1 {
-    font-size: 56px;
+    font-size: 52px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);

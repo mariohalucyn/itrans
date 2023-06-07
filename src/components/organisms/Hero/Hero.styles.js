@@ -13,15 +13,20 @@ export const HeroHeader = styled.div`
 export const HeroContent = styled.div`
   padding: 0;
   display: flex;
+  width: 1rem;
   justify-content: start;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
 
   @media (min-width: 1200px) {
     width: 1200px;
-    margin: 0 auto;
+    margin: auto;
+  }
+
+  @media (min-width: 768px) {
+    width: 768px;
   }
 
   h1 {
