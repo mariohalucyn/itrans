@@ -3,13 +3,34 @@ import { StyledList, StyledWrapper } from '../AboutSection/AboutSection.styles'
 import Plandeka from '../../../assets/images/plandeka.png'
 import Chlodnia from '../../../assets/images/chlodnia.png'
 import PlatformaPlaska from '../../../assets/images/platformaPlaska.jpg'
+import styled from 'styled-components'
+
+const StyledListItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    max-width: 300px;
+    margin: 0 auto;
+
+    @media (min-width: 1200px) {
+      max-width: 500px;
+    }
+  }
+`
 
 const TransportSection = () => (
   <StyledWrapper>
     <StyledList>
-      <div>
-        <h1>Plandeka</h1>
+      <StyledListItem>
         <img src={Plandeka} alt="" />
+        <h1>Plandeka</h1>
         <p>
           Uniwersalne naczepy stosowane do przewozu wszelkiego rodzaju towarów
           zabezpieczonych opakowaniem, luźnych, odpornych na zmiany temperatury.
@@ -21,10 +42,10 @@ const TransportSection = () => (
           Pojazdy mniejsze typu solo oraz busy dostosowujemy w zależności od
           wymiarów transportowanego towaru.
         </p>
-      </div>
-      <div>
-        <h1>Chłodnia</h1>
+      </StyledListItem>
+      <StyledListItem>
         <img src={Chlodnia} alt="" />
+        <h1>Chłodnia</h1>
         <p>
           Uniwersalne naczepy stosowane do przewozu wszelkiego rodzaju towarów
           zabezpieczonych opakowaniem, luźnych, odpornych na zmiany temperatury.
@@ -36,10 +57,10 @@ const TransportSection = () => (
           Pojazdy mniejsze typu solo oraz busy dostosowujemy w zależności od
           wymiarów transportowanego towaru.
         </p>
-      </div>
-      <div>
-        <h1>Platformy płaskie</h1>
+      </StyledListItem>
+      <StyledListItem>
         <img src={PlatformaPlaska} alt="" />
+        <h1>Platformy płaskie</h1>
         <p>
           PlatfoPlatformy płaskie świetnie sprawdzają się w transporcie ładunków
           szerszych i wyższych, których rozmiar wykracza poza ograniczenia ścian
@@ -49,16 +70,16 @@ const TransportSection = () => (
           i przemysłowe. Transport kontenerów morskich 20x40x45cali odbywa się
           przy użyciu platform z systemem twistlock.rmy płaskie
         </p>
-      </div>
+      </StyledListItem>
       <div>
         <h1>Transport ładunków ponadgabarytowych.</h1>
         <p>
           Transport ponadgabarytowy to przewóz ładunków, które swoimi wymiarami
           lub ciężarem przekraczają dozwolone prawnie normy do poruszania się po
           drogach. Jeżeli macie Państwo do przetransportowania ładunek, który
-          przekracza 13,6m długości lub 25 ton wagi, z pewnością jest to ładunek
-          wymagający specjalistycznego transportu, który możemy dla Was wykonać.
-          Wykorzystujemy w tym celu platformy niskopodwoziowe, semi,
+          przekracza 13,6 m długości lub 25 ton wagi, z pewnością jest to
+          ładunek wymagający specjalistycznego transportu, który możemy dla Was
+          wykonać. Wykorzystujemy w tym celu platformy niskopodwoziowe, semi,
           teleskopowe, a także naczepy wieloosiowe w zależności od rozmiarów i
           wagi ładunku. Towar na życzenie możemy okryć plandeką płachtą.
         </p>

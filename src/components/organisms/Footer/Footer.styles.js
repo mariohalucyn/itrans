@@ -5,6 +5,7 @@ export const StyledWrapper = styled.div`
 `
 
 export const StyledFooter = styled.div`
+  padding: 0 24px;
   @media (min-width: 1200px) {
     width: 1200px;
     margin: 0 auto;

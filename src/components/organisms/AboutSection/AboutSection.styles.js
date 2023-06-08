@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledWrapper = styled.div`
+  padding: 24px;
   @media (min-width: 1200px) {
     width: 1200px;
     margin: 0 auto;
@@ -10,7 +11,7 @@ export const StyledWrapper = styled.div`
 export const StyledList = styled.ul`
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 48px 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -29,27 +30,6 @@ export const StyledList = styled.ul`
 
     a {
       text-decoration: none;
-    }
-  }
-
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 24px;
-
-    p {
-      margin: 0;
-      padding: 0;
-    }
-
-    img {
-      max-width: 300px;
-      margin: 0 auto;
-
-      @media (min-width: 1200px) {
-        max-width: 500px;
-      }
     }
   }
 `

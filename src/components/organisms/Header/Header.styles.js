@@ -13,6 +13,10 @@ export const StyledWrapper = styled.div`
     bottom: 0;
     background-color: ${({ theme }) => theme.colors.lightGray};
   }
+
+  @media (min-width: 1200px) {
+    padding: 0 24px;
+  }
 `
 
 export const StyledHeader = styled.div`
