@@ -1,15 +1,15 @@
 import React from 'react'
-import {
-  ReadMore,
-  StyledList,
-  StyledWrapper,
-} from '../AboutSection/AboutSection.styles'
+import { StyledList, StyledWrapper } from '../AboutSection/AboutSection.styles'
+import Plandeka from '../../../assets/images/plandeka.png'
+import Chlodnia from '../../../assets/images/chlodnia.png'
+import PlatformaPlaska from '../../../assets/images/platformaPlaska.jpg'
 
 const TransportSection = () => (
   <StyledWrapper>
     <StyledList>
       <div>
         <h1>Plandeka</h1>
+        <img src={Plandeka} alt="" />
         <p>
           Uniwersalne naczepy stosowane do przewozu wszelkiego rodzaju towarów
           zabezpieczonych opakowaniem, luźnych, odpornych na zmiany temperatury.
@@ -17,13 +17,14 @@ const TransportSection = () => (
           1360x247x280cm z ładownością do 25 ton (na określonych relacjach
           możliwość podstawienia naczepy typu MEGA do 300 cm wysokości towaru
           oraz coil-muldy stosowanej do transportu elementów owalnych). Zestawy
-          o wymiarach 770x245x300 + 770x245x300 cm o ładowności do 24 ton.
+          o wymiarach 770x245x300cm + 770x245x300cm o ładowności do 24 ton.
           Pojazdy mniejsze typu solo oraz busy dostosowujemy w zależności od
           wymiarów transportowanego towaru.
         </p>
       </div>
       <div>
         <h1>Chłodnia</h1>
+        <img src={Chlodnia} alt="" />
         <p>
           Uniwersalne naczepy stosowane do przewozu wszelkiego rodzaju towarów
           zabezpieczonych opakowaniem, luźnych, odpornych na zmiany temperatury.
@@ -31,20 +32,21 @@ const TransportSection = () => (
           1360x247x280cm z ładownością do 25 ton (na określonych relacjach
           możliwość podstawienia naczepy typu MEGA do 300 cm wysokości towaru
           oraz coil-muldy stosowanej do transportu elementów owalnych). Zestawy
-          o wymiarach 770x245x300 + 770x245x300 cm o ładowności do 24 ton.
+          o wymiarach 770x245x300cm + 770x245x300cm o ładowności do 24 ton.
           Pojazdy mniejsze typu solo oraz busy dostosowujemy w zależności od
           wymiarów transportowanego towaru.
         </p>
       </div>
       <div>
         <h1>Platformy płaskie</h1>
+        <img src={PlatformaPlaska} alt="" />
         <p>
           PlatfoPlatformy płaskie świetnie sprawdzają się w transporcie ładunków
           szerszych i wyższych, których rozmiar wykracza poza ograniczenia ścian
           bocznych naczepy kurtynowej oraz innych ładunków odpornych na
           działanie warunków atmosferycznych. Przy ich pomocy przewozi się
           najczęściej ładunki stali, dłużycę, konstrukcje oraz maszyny budowlane
-          i przemysłowe. Transport kontenerów morskich 20 / 40 / 45 odbywa się
+          i przemysłowe. Transport kontenerów morskich 20x40x45cali odbywa się
           przy użyciu platform z systemem twistlock.rmy płaskie
         </p>
       </div>
@@ -54,9 +56,9 @@ const TransportSection = () => (
           Transport ponadgabarytowy to przewóz ładunków, które swoimi wymiarami
           lub ciężarem przekraczają dozwolone prawnie normy do poruszania się po
           drogach. Jeżeli macie Państwo do przetransportowania ładunek, który
-          przekracza 13,6 m długości lub 25 ton wagi, z pewnością jest to
-          ładunek wymagający specjalistycznego transportu, który możemy dla Was
-          wykonać. Wykorzystujemy w tym celu platformy niskopodwoziowe, semi,
+          przekracza 13,6m długości lub 25 ton wagi, z pewnością jest to ładunek
+          wymagający specjalistycznego transportu, który możemy dla Was wykonać.
+          Wykorzystujemy w tym celu platformy niskopodwoziowe, semi,
           teleskopowe, a także naczepy wieloosiowe w zależności od rozmiarów i
           wagi ładunku. Towar na życzenie możemy okryć plandeką płachtą.
         </p>

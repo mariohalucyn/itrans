@@ -19,7 +19,6 @@ export const StyledHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   display: flex;
-  padding: 0 24px;
 
   h1 {
     font-size: 52px;
