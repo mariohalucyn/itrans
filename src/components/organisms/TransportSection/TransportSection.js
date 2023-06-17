@@ -32,8 +32,7 @@ const TransportSection = () => (
         <img src={Plandeka} alt="" />
         <h1>Plandeka</h1>
         <p>
-          Uniwersalne naczepy stosowane do przewozu wszelkiego rodzaju towarów
-          zabezpieczonych opakowaniem, luźnych, odpornych na zmiany temperatury.
+          Uniwersalne naczepy stosowane do przewozu wszelkiego rodzaju towarów.
           Możliwość ładowania tyłem, bokiem i górą. Naczepy o wymiarach
           1360x247x280cm z ładownością do 25 ton (na określonych relacjach
           możliwość podstawienia naczepy typu MEGA do 300 cm wysokości towaru
@@ -62,7 +61,7 @@ const TransportSection = () => (
         <img src={PlatformaPlaska} alt="" />
         <h1>Platformy płaskie</h1>
         <p>
-          PlatfoPlatformy płaskie świetnie sprawdzają się w transporcie ładunków
+          Platformy płaskie świetnie sprawdzają się w transporcie ładunków
           szerszych i wyższych, których rozmiar wykracza poza ograniczenia ścian
           bocznych naczepy kurtynowej oraz innych ładunków odpornych na
           działanie warunków atmosferycznych. Przy ich pomocy przewozi się

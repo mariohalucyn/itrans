@@ -91,11 +91,11 @@ export const StyledLabel = styled.label`
 
   button {
     width: 90px;
-    height: 48px;
+    height: 54px;
     font-weight: 600;
     font-size: 1rem;
     background-color: ${({ theme }) => theme.colors.white};
-    border: 4px solid ${({ theme }) => theme.colors.main};
+    border: 3px solid ${({ theme }) => theme.colors.main};
   }
 `
 
