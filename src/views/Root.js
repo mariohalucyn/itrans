@@ -5,7 +5,7 @@ import { theme } from '../assets/themes/theme'
 import Header from '../components/organisms/Header/Header'
 import Hero from '../components/organisms/Hero/Hero'
 import Footer from '../components/organisms/Footer/Footer'
-import Transport from '../components/templates/Transport/Transport'
+import AboutSection from "../components/organisms/AboutSection/AboutSection";
 
 const Root = () => (
   <>
@@ -13,7 +13,7 @@ const Root = () => (
     <ThemeProvider theme={theme}>
       <Header />
       <Hero />
-      <Transport />
+      <AboutSection />
       <Footer />
     </ThemeProvider>
   </>
